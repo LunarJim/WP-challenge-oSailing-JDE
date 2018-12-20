@@ -1,0 +1,30 @@
+{
+    "name": "LunarJim/WP-Challenge-oSailing",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^5.0",
+        "wpackagist-theme/twentynineteen": "*"
+    },
+    "require-dev": {
+        "wpackagist-plugin/what-the-file": "*",
+        "wpackagist-plugin/simply-show-hooks": "*"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    },
+    "authors": [
+        {
+            "name": "LunarJim",
+            "email": "LunarJim@me.com"
+        }
+    ]
+}
